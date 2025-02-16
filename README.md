@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TODO List for Fullstack Project
 
-## Getting Started
+## Frontend (Next.js)
 
-First, run the development server:
+### Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [x] Install and set up Next.js
+- [x] Create a new Next.js project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Components and Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] Code for Navbar
+- [ ] Display categories on the front page
+- [ ] Hard-code and list properties on the front page
+- [ ] Create a detail page for properties
+- [ ] Create a landlord page
+- [ ] Create "My Reservations" page
+- [ ] Create "My Properties" page
+- [ ] Create an Inbox page
+- [ ] Detail page for chat
+- [ ] User menu popup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Reusable Components
 
-## Learn More
+- [ ] Create a reusable modal window
+- [ ] Log in / Sign in modal
+- [ ] Sign up modal (handle and display error codes)
 
-To learn more about Next.js, take a look at the following resources:
+### Dynamic Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Add properties from Next.js (create modal, API endpoint, send data)
+- [ ] Book property
+- [ ] Make the landlord page dynamic
+- [ ] Make "My Properties" dynamic
+- [ ] Make "My Reservations" dynamic
+- [ ] Set property as favorite
+- [ ] Create "My Favorites" page with listings
+- [ ] Make conversations dynamic
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Search Filters
 
-## Deploy on Vercel
+- [ ] Create modal for search filter
+- [ ] Implement country search
+- [ ] Add calendar for check-in/check-out
+- [ ] Search details (number of guests, bedrooms)
+- [ ] API endpoint for search filters
+- [ ] Choose between categories on the front page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Backend (Django with PostgreSQL)
+
+### Setup
+
+- [ ] Set up Docker for Django with PostgreSQL
+- [ ] Install Django REST Framework (DRF), CORS headers, etc.
+
+### User Model
+
+- [ ] Create and configure the user model
+
+### Properties App
+
+- [ ] Create an app for properties
+- [ ] Create model and serializer for properties
+- [ ] Fetch properties in the frontend and list them
+
+### Authentication
+
+- [ ] Implement login
+- [ ] Implement signup
+- [ ] Implement logout
+
+### Dynamic Features
+
+- [ ] Set up WebSockets in the backend
+- [ ] Connect via WebSocket
+- [ ] Send and receive messages
+- [ ] Store and load messages
+- [ ] Start new conversation
+
+---
+
+## Deployment
+
+### Git Setup
+
+- [ ] Set up GitHub repository
+
+### Server Setup (DigitalOcean)
+
+- [ ] Create and configure server
+
+### Backend Deployment
+
+- [ ] Create environment
+- [ ] Pull code from GitHub
+- [ ] Complete server configuration
+
+### Frontend Deployment
+
+- [ ] Set up Node.js and Nginx
+- [ ] Pull code from GitHub
+
+---
+
+## README File
+
+- [ ] Create a detailed `.md` README file outlining project structure and steps
