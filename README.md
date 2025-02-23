@@ -9,7 +9,7 @@
 
 ### Components and Pages
 
-- [ ] Code for Navbar
+- [x] Code for Navbar
 - [ ] Display categories on the front page
 - [ ] Hard-code and list properties on the front page
 - [ ] Create a detail page for properties
