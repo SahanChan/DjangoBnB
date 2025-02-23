@@ -15,8 +15,8 @@
 - [x] Create a detail page for properties
 - [x] Create a landlord page
 - [x] Create "My Reservations" page
-- [ ] Create "My Properties" page
-- [ ] Create an Inbox page
+- [x] Create "My Properties" page
+- [x] Create an Inbox page
 - [ ] Detail page for chat
 - [ ] User menu popup
 
