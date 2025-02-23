@@ -13,7 +13,7 @@
 - [x] Display categories on the front page (static)
 - [x] Hard-code and list properties on the front page
 - [x] Create a detail page for properties
-- [ ] Create a landlord page
+- [x] Create a landlord page
 - [ ] Create "My Reservations" page
 - [ ] Create "My Properties" page
 - [ ] Create an Inbox page
