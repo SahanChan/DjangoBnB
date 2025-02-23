@@ -14,7 +14,7 @@
 - [x] Hard-code and list properties on the front page
 - [x] Create a detail page for properties
 - [x] Create a landlord page
-- [ ] Create "My Reservations" page
+- [x] Create "My Reservations" page
 - [ ] Create "My Properties" page
 - [ ] Create an Inbox page
 - [ ] Detail page for chat
