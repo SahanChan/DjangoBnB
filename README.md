@@ -10,7 +10,7 @@
 ### Components and Pages
 
 - [x] Code for Navbar
-- [ ] Display categories on the front page
+- [x] Display categories on the front page (static)
 - [ ] Hard-code and list properties on the front page
 - [ ] Create a detail page for properties
 - [ ] Create a landlord page
