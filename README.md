@@ -17,7 +17,7 @@
 - [x] Create "My Reservations" page
 - [x] Create "My Properties" page
 - [x] Create an Inbox page
-- [ ] Detail page for chat
+- [x] Detail page for chat
 - [ ] User menu popup
 
 ### Reusable Components
