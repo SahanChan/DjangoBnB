@@ -11,7 +11,7 @@
 
 - [x] Code for Navbar
 - [x] Display categories on the front page (static)
-- [ ] Hard-code and list properties on the front page
+- [x] Hard-code and list properties on the front page
 - [ ] Create a detail page for properties
 - [ ] Create a landlord page
 - [ ] Create "My Reservations" page
