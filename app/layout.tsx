@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Atkinson_Hyperlegible } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Modal from "./components/modals/Modal";
 import LoginModal from "./components/modals/LoginModal";
 import SignupModal from "./components/modals/SignupModal";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const atkinsonHyperlegible = Atkinson_Hyperlegible({
+  variable: "--font-atkinson-hyperlegible",
   subsets: ["latin"],
+  weight: ["400", "700"], // Ensuring regular and bold weights
 });
 
 export const metadata: Metadata = {
@@ -28,9 +25,7 @@ export default function RootLayout({
   const content = <p>Yo</p>;
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${atkinsonHyperlegible.variable} antialiased`}>
         <Navbar />
         <div className="pt-32">{children}</div>
         {/* <Modal label="NormalTItle" content={content} isOpen={false}  /> */}
