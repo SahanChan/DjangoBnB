@@ -22,7 +22,7 @@
 
 ### Reusable Components
 
-- [ ] Create a reusable modal window
+- [x] Create a reusable modal window
 - [ ] Log in / Sign in modal
 - [ ] Sign up modal (handle and display error codes)
 
