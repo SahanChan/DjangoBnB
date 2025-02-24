@@ -23,8 +23,8 @@
 ### Reusable Components
 
 - [x] Create a reusable modal window
-- [ ] Log in / Sign in modal
-- [ ] Sign up modal (handle and display error codes)
+- [x] Log in / Sign in modal
+- [x] Sign up modal (handle and display error codes)
 
 ### Dynamic Features
 
