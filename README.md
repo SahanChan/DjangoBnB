@@ -18,7 +18,7 @@
 - [x] Create "My Properties" page
 - [x] Create an Inbox page
 - [x] Detail page for chat
-- [ ] User menu popup
+- [x] User menu popup
 
 ### Reusable Components
 
