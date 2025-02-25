@@ -52,8 +52,8 @@
 
 ### Setup
 
-- [ ] Set up Docker for Django with PostgreSQL
-- [ ] Install Django REST Framework (DRF), CORS headers, etc.
+- [x] Set up Docker for Django with PostgreSQL
+- [x] Install Django REST Framework (DRF), CORS headers, etc.
 
 ### User Model
 
