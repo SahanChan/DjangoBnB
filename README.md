@@ -57,11 +57,12 @@
 
 ### User Model
 
-- [ ] Create and configure the user model
+- [x] Create and configure the user model
 
 ### Properties App
 
-- [ ] Create an app for properties
+- [x] Configure drf,cors, etc
+- [x] Create an app for properties
 - [ ] Create model and serializer for properties
 - [ ] Fetch properties in the frontend and list them
 
