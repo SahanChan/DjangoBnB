@@ -63,8 +63,9 @@
 
 - [x] Configure drf,cors, etc
 - [x] Create an app for properties
-- [ ] Create model and serializer for properties
-- [ ] Fetch properties in the frontend and list them
+- [x] Create model and serializer for properties
+- [x] Fetch properties in the frontend and list them
+- [x] Create api service file (and use it in the properties list)
 
 ### Authentication
 
