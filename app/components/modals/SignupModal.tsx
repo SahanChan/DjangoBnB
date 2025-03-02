@@ -2,45 +2,93 @@
 import React from "react";
 import Modal from "./Modal";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import useSignupModal from "@/app/hooks/useSignupModal";
 import CustomButton from "../forms/CustomButton";
+import apiService from "@/app/services/apiService";
 
 export default function SignupModal() {
+  const router = useRouter();
   const signupModal = useSignupModal();
+  const [fullName, setFullName] = useState<string>("");
+  const [telephone, setTelephone] = useState<string>("");
+  const [email, setEmail] = useState("");
+  const [password1, setPassword1] = useState("");
+  const [password2, setPassword2] = useState("");
+  const [errors, setErrors] = useState<string[]>([]);
+
+  const submitSignup = async () => {
+    const formData = {
+      fullName: fullName,
+      telephone: telephone,
+      email: email,
+      password1: password1,
+      password2: password2,
+    };
+
+    const response = await apiService.post(
+      "api/auth/register/",
+      JSON.stringify(formData)
+    );
+    if (response.access) {
+      //handlelogin
+      signupModal.close();
+      router.push("/");
+    } else {
+      const tmpErrors: string[] = Object.values(response).map((error: any) => {
+        return error;
+      });
+      setErrors(tmpErrors);
+    }
+  };
 
   const content = (
     <div>
       <h2 className="mb-6 text-2xl">Welcome to Django bnb, Please Sign up</h2>
-      <form className="space-y-4">
+      <form action={submitSignup} className="space-y-4">
         <input
+          onChange={(e) => setFullName(e.target.value)}
           type="text"
           placeholder="your full name"
           className="w-full h-[54px] px-4 border border-gray-100 rounded-xl"
         />
         <input
+          onChange={(e) => setTelephone(e.target.value)}
           type="tel"
           placeholder="your telephone"
           className="w-full h-[54px] px-4 border border-gray-100 rounded-xl"
         />
         <input
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="your email address"
           className="w-full h-[54px] px-4 border border-gray-100 rounded-xl"
         />
         <input
+          onChange={(e) => setPassword1(e.target.value)}
           type="password"
           placeholder="your password"
           className="w-full h-[54px] px-4 border border-gray-100 rounded-xl"
         />
         <input
+          onChange={(e) => setPassword2(e.target.value)}
           type="password"
           placeholder="confirm your password"
           className="w-full h-[54px] px-4 border border-gray-100 rounded-xl"
         />
-        <div className="p-5 bg-airbnb text-white rounded-xl opacity-80">
-          The error message
-        </div>
-        <CustomButton label="Submit" onClick={() => console.log("fuckj")} />
+
+        {errors.map((error, index) => {
+          return (
+            <div
+              key={`error_${index}`}
+              className="p-5 bg-airbnb text-white rounded-xl opacity-80"
+            >
+              {error}
+            </div>
+          );
+        })}
+
+        <CustomButton label="Submit" onClick={submitSignup} />
       </form>
     </div>
   );
