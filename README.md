@@ -70,7 +70,7 @@
 ### Authentication
 
 - [x] Implement login
-- [ ] Implement signup
+- [x] Implement signup
 - [ ] Implement logout
 
 ### Dynamic Features
