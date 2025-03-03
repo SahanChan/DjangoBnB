@@ -69,7 +69,7 @@
 
 ### Authentication
 
-- [ ] Implement login
+- [x] Implement login
 - [ ] Implement signup
 - [ ] Implement logout
 
