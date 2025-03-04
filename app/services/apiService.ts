@@ -13,7 +13,7 @@ const apiService = {
       })
         .then((response) => response.json())
         .then((json) => {
-          console.log("Response fuck", json);
+          console.log("Response get: ", json);
           resolve(json);
         })
         .catch((error) => {
@@ -36,7 +36,7 @@ const apiService = {
       })
         .then((response) => response.json())
         .then((json) => {
-          console.log("Response fuck", json);
+          console.log("Response post: ", json);
           resolve(json);
         })
         .catch((error) => {
