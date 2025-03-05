@@ -71,7 +71,7 @@
 
 - [x] Implement login
 - [x] Implement signup
-- [ ] Implement logout
+- [x] Implement logout
 
 ### Dynamic Features
 
